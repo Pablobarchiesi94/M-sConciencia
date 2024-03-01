@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Meta Tags requeridas -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!--CSS propio-->
+        <link rel="stylesheet" href="css/estilo.css">
+
+        <!-- JavaScript -->
+        <!-- jQuery, Popper.js, y Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!--Titulo de la pestaña-->
+        <title>+Conciencia</title>
+    </head>
+
+    <body>
+
+        <!--Tipo de navbar y color de fondo-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #6a7191;">
+            <div class="container-fluid">
+
+                <!--Logo del navbar-->
+                <a class="navbar-brand">
+                        <img src="img/logo.png" width="150" height="30" alt="">
+                </a>
+
+                <!--Botón collapse para la vista en smartphones y tablets-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Etiqueta <ul> para representar una lista de items, sin importar el orden particular.-->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+
+                        <!--Inicio-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="masconciencia.html">Inicio</a>
+                        </li>
+
+                        <!--Mascotas-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="mascotas.html">Mascotas</a>
+                        </li>
+
+                        <!--Refugios-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refugios</a>
+                        </li>
+
+                        <!--About-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+
+                    </ul>
+
+                    <!--Usamos otro <ul> porque cambiamos la clase (para alinear a la derecha)-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="nav-link" href="#">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+       <div class="row">
+            <div class="col">
+                <div class="mx-auto w-50 p-3 text-center">
+                    
+                    <form action="datos.php" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" pattern="[A-Z a-z]{1,20}" title="Los datos ingresados no son válidos." placeholder="Ingresa tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" pattern="[A-Z a-z]{1,20}" title="Los datos ingresados no son válidos." placeholder="Ingresa tu apellido" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                            <small id="textoEmail" class="form-text text-muted">Tu dirección de correo electrónico es para proveerte información sobre la mascota. No será compartida con nadie.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comentario">Breve descripción sobre vos y por qué querés adoptar esta mascota</label>
+                            <textarea class="form-control" id="comentario" rows="3" placeholder="Ingresa una descripción" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success" value="Adoptar"></button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

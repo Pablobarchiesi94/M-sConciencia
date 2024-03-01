@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Meta Tags requeridas -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!--CSS propio-->
+        <link rel="stylesheet" href="css/estilo.css">
+
+        <!-- JavaScript -->
+        <!-- jQuery, Popper.js, y Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!--Titulo de la pestaña-->
+        <title>+Conciencia</title>
+    </head>
+
+    <body>
+
+        <!--Tipo de navbar y color de fondo-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #6a7191;">
+            <div class="container-fluid">
+
+                <!--Logo del navbar-->
+                <a class="navbar-brand">
+                        <img src="img/logo.png" width="150" height="30" alt="">
+                </a>
+
+                <!--Botón collapse para la vista en smartphones y tablets-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Etiqueta <ul> para representar una lista de items, sin importar el orden particular.-->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+
+                        <!--Inicio-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="masconciencia.html">Inicio</a>
+                        </li>
+
+                        <!--Mascotas-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Mascotas</a>
+                        </li>
+
+                        <!--Refugios-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refugios</a>
+                        </li>
+
+                        <!--About-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+
+                    </ul>
+
+                    <!--Usamos otro <ul> porque cambiamos la clase (para alinear a la derecha)-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="nav-link" href="#">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!--Sidebar-->
+        <div class="sidenav">
+            <a href="#">Perros</a>
+            <a href="#">Gatos</a>
+            <a href="#">Otros</a>
+        </div>
+
+        <!--Padding debajo del NavBar. Está puesto fuera de "estilo.css" para que lo sobreescriba.-->
+        <style> body {padding-top: 100px; padding-left: 250px;} </style>
+
+         
+
+        <!--Cartas-->
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/placeholders/mascota1.png" class="card-img" style="max-height: 200px;">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascota 1</h5>
+                        <p class="card-text">Información sobre la mascota, raza, sexo, edad, etc.</p>
+                        <p class="card-text"><small class="text-muted">Subido hace: 2 horas.</small></p>
+                        <a href="#mas_info" class="btn btn-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse">Ver más</a>
+                        <div class="collapse" id="mas_info">
+                            <div class="card card-body">
+                                <p>En este apartado se puede expandir más la información sobre la mascota.</p>
+
+                                <div class="col-md-4">
+                                    <a href="formulario.html" class="btn btn-success">Adoptar</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/placeholders/mascota1.png" class="card-img" style="max-height: 200px;">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascota 2</h5>
+                        <p class="card-text">Información sobre la mascota, raza, sexo, edad, etc.</p>
+                        <p class="card-text"><small class="text-muted">Subido hace: 10 horas.</small></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/placeholders/mascota1.png" class="card-img" style="max-height: 200px;">
+
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascota 3</h5>
+                        <p class="card-text">Información sobre la mascota, raza, sexo, edad, etc.</p>
+                        <p class="card-text"><small class="text-muted">Subido hace: 16 horas.</small></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/placeholders/mascota1.png" class="card-img" style="max-height: 200px;">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascota 4</h5>
+                        <p class="card-text">Información sobre la mascota, raza, sexo, edad, etc.</p>
+                        <p class="card-text"><small class="text-muted">Subido hace: 1 día.</small></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 1000px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/placeholders/mascota1.png" class="card-img" style="max-height: 200px;">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascota 5</h5>
+                        <p class="card-text">Información sobre la mascota, raza, sexo, edad, etc.</p>
+                        <p class="card-text"><small class="text-muted">Subido hace: 2 días. </small></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
